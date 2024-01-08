@@ -3611,7 +3611,7 @@ textarea.form-control-lg {
 .nav {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
-  --bs-nav-link-font-weight: ;
+  --bs-nav-link-font-weight: 700;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: #6c757d;
@@ -10929,10 +10929,10 @@ p.lead {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
-  color: #fff;
+  height: 3rem;
+  width: 3rem;
+  background-color: rgba(255, 255, 255, 0.55);
+  color: #00A0A0;
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
@@ -10941,7 +10941,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: white;
 }
 
 .dev-icons {
