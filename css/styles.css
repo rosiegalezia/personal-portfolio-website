@@ -10912,7 +10912,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    /* border: 0.5rem solid rgba(255, 255, 255, 0.2); */
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -10962,7 +10962,6 @@ section.resume-section {
   padding-right: 3rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  /* max-width: 75vw; */
   max-width: 120rem;
 }
 section.resume-section .resume-section-content {
