@@ -130,20 +130,20 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 h1, .h1 {
   font-size: calc(1.725rem + 5.7vw);
 }
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 6rem;
   }
-}
+} */
 
 h2, .h2 {
   font-size: calc(1.475rem + 2.7vw);
 }
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   h2, .h2 {
     font-size: 3.5rem;
   }
-}
+} */
 
 h3, .h3 {
   font-size: calc(1.325rem + 0.9vw);
@@ -157,11 +157,11 @@ h3, .h3 {
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
 }
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   h4, .h4 {
     font-size: 1.5rem;
   }
-}
+} */
 
 h5, .h5 {
   font-size: 1.25rem;
@@ -690,8 +690,8 @@ progress {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  /* padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5); */
   margin-top: var(--bs-gutter-y);
 }
 
