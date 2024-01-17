@@ -81,8 +81,18 @@
 }
 
 #about {
-  max-width: 70%;
+  max-width: 100%;
 }
+
+@media (min-width: 1200px) {
+  #about {
+    max-width: 80%;
+  }
+}
+
+/* #projects {
+  max-width: 100%;
+} */
 
 *,
 *::before,
@@ -137,7 +147,7 @@ h1, .h1 {
 } */
 
 h2, .h2 {
-  font-size: calc(1.475rem + 2.7vw);
+  font-size: calc(1.475rem + 1.7rem);
 }
 /* @media (min-width: 1200px) {
   h2, .h2 {
