@@ -33,30 +33,26 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-let paths = document.querySelectorAll('path')
+// let paths = document.querySelectorAll('path')
 
-writeName()
+// writeName()
 
-function writeName() {
+// function writeName() {
+//     for (let i = 0; i < paths.length; i++) {
+//         let path = paths[i];
+//         let pathLength = path.getTotalLength();
+//         let isReversed = path.classList.contains('reverse');
 
-    for (var i = 0; i < paths.length; i++) {
-        let path = paths[i];
-        let pathLength = path.getTotalLength();
-        // path.style.strokeDasharray = pathLength
-        // path.style.strokeDashoffset = pathLength
-        path.setAttribute("stroke-dasharray", pathLength)
-        path.setAttribute("stroke-dashoffset", pathLength)
+//         if (isReversed) {
+//             path.setAttribute("stroke-dasharray", pathLength + " " + pathLength);
+//             path.setAttribute("stroke-dashoffset", pathLength);
+//         } else {
+//             path.setAttribute("stroke-dasharray", pathLength);
+//             path.setAttribute("stroke-dashoffset", pathLength);
+//         }
 
-        path.innerHTML = "<animate id = i attributeName='stroke-dashoffset' begin='0s' dur='1s' to='0' fill='freeze'/>"
-
-
-        // if (i===0){
-        //     path.innerHTML = "<animate id = i attributeName='stroke-dashoffset' begin='0s' dur='1s' to='0' fill='freeze'/>"
-        // } else {
-        //     path.innerHTML = "<animate id = i attributeName='stroke-dashoffset' begin=i dur='1s' to='0' fill='freeze'/>"
-
-        // }
-
-    }
-
-}
+//         // Calculate the animation duration based on the path length
+//         let animationDuration = 0.5 ; // Set your desired duration in seconds
+//         path.innerHTML = `<animate attributeName="stroke-dashoffset" begin="${i * animationDuration}s" dur="${animationDuration}s" to="0" fill="freeze"/>`;
+//     }
+// }
