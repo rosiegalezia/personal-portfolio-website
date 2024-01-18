@@ -32,3 +32,31 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+let paths = document.querySelectorAll('path')
+
+writeName()
+
+function writeName() {
+
+    for (var i = 0; i < paths.length; i++) {
+        let path = paths[i];
+        let pathLength = path.getTotalLength();
+        // path.style.strokeDasharray = pathLength
+        // path.style.strokeDashoffset = pathLength
+        path.setAttribute("stroke-dasharray", pathLength)
+        path.setAttribute("stroke-dashoffset", pathLength)
+
+        path.innerHTML = "<animate id = i attributeName='stroke-dashoffset' begin='0s' dur='1s' to='0' fill='freeze'/>"
+
+
+        // if (i===0){
+        //     path.innerHTML = "<animate id = i attributeName='stroke-dashoffset' begin='0s' dur='1s' to='0' fill='freeze'/>"
+        // } else {
+        //     path.innerHTML = "<animate id = i attributeName='stroke-dashoffset' begin=i dur='1s' to='0' fill='freeze'/>"
+
+        // }
+
+    }
+
+}
