@@ -33,6 +33,52 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+
+
+// Select all SVG paths with the class 'reverse'
+const reversePaths = document.querySelectorAll('svg path.reverse');
+
+// Loop through each path
+reversePaths.forEach(path => {
+    // Get the current path data
+    const pathData = path.getAttribute('d');
+    
+    // Split the path data into individual commands
+    const commands = pathData.split(/(?=[A-Z])/);
+    
+    // Reverse the array of commands
+    const reversedCommands = commands.reverse();
+    
+    // Join the reversed commands back into a string
+    const reversedPathData = reversedCommands.join('');
+    
+    // Set the 'd' attribute of the path element to the reversed path data
+    path.setAttribute('d', reversedPathData);
+});
+
+function animateHandwriting() {
+    const path = document.getElementById('l');
+    const length = path.getTotalLength();
+
+    // Set up the animation
+    path.style.transition = path.style.WebkitTransition =
+        'none';
+    path.style.strokeDasharray = length + ' ' + length;
+    path.style.strokeDashoffset = length;
+    path.getBoundingClientRect(); // Trigger reflow
+
+    // Draw from bottom to top
+    path.style.transition = path.style.WebkitTransition =
+        'stroke-dashoffset 1s ease-in-out';
+    path.style.strokeDashoffset = '0';
+}
+
+// Trigger the animation when the window loads
+window.onload = function () {
+    animateHandwriting();
+};
+
+
 // let paths = document.querySelectorAll('path')
 
 // writeName()
@@ -52,7 +98,7 @@ window.addEventListener('DOMContentLoaded', event => {
 //         }
 
 //         // Calculate the animation duration based on the path length
-//         let animationDuration = 0.5 ; // Set your desired duration in seconds
+//         let animationDuration = 0.9 ; // Set your desired duration in seconds
 //         path.innerHTML = `<animate attributeName="stroke-dashoffset" begin="${i * animationDuration}s" dur="${animationDuration}s" to="0" fill="freeze"/>`;
 //     }
 // }
