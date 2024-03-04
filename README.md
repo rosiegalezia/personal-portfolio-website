@@ -1,8 +1,8 @@
 # personal-portfolio-website
-A portfolio for my product design projects, created to practice my front-end web development skills.
+A portfolio to showcase my product design and web development projects.
 
 ## Usage
-* The website can be viewed at rosiegalezia.co.uk
+* The website can be viewed [here](rosiegalezia.co.uk)
 
 Screenshot coming soon!
 
