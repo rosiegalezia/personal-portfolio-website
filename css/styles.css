@@ -153,22 +153,30 @@ h1,
   font-size: calc(1.725rem + 5.7vw);
 }
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
   h1, .h1 {
     font-size: 6rem;
   }
-} */
+}
 
 h2,
 .h2 {
   font-size: calc(1.475rem + 1.7rem);
 }
 
-/* @media (min-width: 1200px) {
+/* font size for large screens  */
+@media (min-width: 1200px) {
   h2, .h2 {
     font-size: 3.5rem;
   }
-} */
+}
+
+/* font size for small screens  */
+@media (max-width: 576px) {
+  h2, .h2 {
+    font-size: 2.2rem;
+  }
+}
 
 h3,
 .h3 {
@@ -210,6 +218,24 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
+
+/* hide social icons on smaller screens  */
+@media (max-width: 992px) {
+.social-icons {
+display: none;
+}
+}
+
+/* fix font of name on collapsed navbar */
+@media (max-width: 992px) {
+  .name {
+    font-family: 'Kumbh Sans';
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+  }
+  }
+
 
 abbr[title] {
   -webkit-text-decoration: underline dotted;

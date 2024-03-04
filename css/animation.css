@@ -1,0 +1,35 @@
+.path-to-animate-reverse-rosie,
+.path-to-animate-forward-rosie {
+    stroke-dasharray: 320;
+    stroke-dashoffset: 320;
+    animation-fill-mode: forwards;
+}
+
+.path-to-animate-reverse-rosie {
+    animation: dash-reverse 1s linear forwards;
+}
+
+.path-to-animate-forward-rosie {
+    animation: dash-forward 1s linear forwards;
+}
+
+/* draw element in forward or reverse */
+@keyframes dash-reverse-rosie {
+    from {
+        stroke-dashoffset: -320;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash-forward-rosie {
+    from {
+        stroke-dashoffset: 320;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
