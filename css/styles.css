@@ -12781,6 +12781,10 @@ p.lead {
 }
 
 .dev-icons {
+  font-size: 2rem;
+}
+
+.skills-dev-icons {
   font-size: 3rem;
 }
 
